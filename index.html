@@ -8,19 +8,89 @@
     <title>Landing Page</title>
 </head>
 <body>
+    <header>
+        <section class="section-container background-first-section" style="display:flex; flex-direction: column;">
+            <img src="./assets/images/black-friday-checked-logo.svg" alt="logo black friday" />
+            <!-- adicionar logo do site -->
+        </section>
+
+        <section>
+            <!-- estilizar o timer -->
+            <p class="timer"></p>
+        </section>
+
+        <section>
+            <p>Todos os produtos com até 70% off por tempo limitado. Então corre para não perder essa oportunidade.</p>
+        </section>
+    </header>
+    <!-- estilizar o fundo do main -->
     <main>
-        <section class="section-container background-first-section">
-            <img src="./assets/logo.webp" alt="logo black friday" />
+        <section>
+            <!-- galeria dos produtos ou serviço -->
+            <div>
+                <img src="./assets/images/hulk-mug.png" alt="caneca do hulk" />
+                <div>
+                    <p>Caneca Gama</p>
+                    <p>R$50,00 - 50%</p>
+                    <p>R$25,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/hulk-lamp.jpg" alt="iluminária do hulk" />
+                <div>
+                    <p>Luminária Gama</p>
+                    <p>R$80,00 - 30%</p>
+                    <p>R$56,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/hulk-funko.jpg" alt="funko do hulk" />
+                <div>
+                    <p>Funko Gama</p>
+                    <p>R$130,00 - 30%</p>
+                    <p>R$91,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/hulk-picture.jpg" alt="quadro do hulk" />
+                <div>
+                    <p>Quadro Gama</p>
+                    <p>R$52,00 - 50%</p>
+                    <p>R$26,00</p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/hulk-shirt.jpg" alt="camiseta do hulk" />
+                <div>
+                    <p>Camiseta Gama</p>
+                    <p>R$59,00 - 70%</p>
+                    <p>R$17,70</p>
+                </div>
+            </div>
+            <div>
+                <img src="./assets/images/hulk-sticker.jpg" alt="adesivo do hulk" />
+                <div>
+                    <p>Caneca Gama</p>
+                    <p>R$29,00 - 20%</p>
+                    <p>R$23,20</p>
+                </div>
+            </div>
         </section>
 
         <section class="section-container background-second-section">
             <div class="card">
+                <!-- melhorar o formulário -->
                 <form action="">
                     <input type="text" id="name" placeholder="Nome" />
                     <input type="text" id="email" placeholder="E-mail" />
                     <input type="submit" value="Pedir agora!" />
+                    <img src="./assets/images/little-hulk.png" alt="imagem do hulk pequeno">
                 </form>
             </div>
+            <section>
+                <!-- estilizar o timer -->
+                <p class="timer"></p>
+            </section>
         </section>
     </main>
 
@@ -31,4 +101,5 @@
     </footer>
 </body>
 <script src="./scripts/script.js"></script>
+<script src="/scripts/timer.js"></script>
 </html>

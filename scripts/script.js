@@ -7,5 +7,8 @@ form.addEventListener("submit", (event) => {
 
     localStorage.setItem("dataUser",JSON.stringify({"name": name, "email": email}));
 
-    form.innerHTML = "<p>Prontinho! Agora é verificar nosso e-mail de confirmação na sua caixa de e-mail </p>";
+    setTimeout(() => {
+        form.innerHTML = "<p>Prontinho!<br />Agora é verificar nosso e-mail de confirmação na sua caixa de entrada.</p>";
+    }, 1500);
+    
 });

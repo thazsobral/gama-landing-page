@@ -1,3 +1,13 @@
+:root {
+    --color-main-green: #00df4d;
+    --color-light-green: #68de5a;
+    --color-main-purple: #9035e0;
+    --color-light-purple: #8c52e5;
+    --color-main-black: #000000;
+    --color-light-black: #1c1c1c;
+    --color-main-white: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,13 +26,17 @@ html {
 }
 
 .background-first-section {
-    background: chocolate;
+    background: var(--color-main-white);
     background-attachment: fixed;
     background-size: contain;
 }
 
+img {
+    width: 90%;
+}
+
 .background-second-section{
-    background: black;
+    background: var(--color-light-black);
 }
 
 .card {
@@ -30,6 +44,7 @@ html {
     border-radius: 25px;
     padding: 25px;
     max-width: 450px;
+    text-align: center;
 }
 
 form {
@@ -49,4 +64,6 @@ input {
 footer {
     display: flex;
     justify-content: center;
+    background: var(--color-light-black);
+    color: var(--color-main-white)
 }
