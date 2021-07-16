@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-first-section {
+    background: chocolate;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.background-second-section{
+    background: black;
+}
+
+.card {
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    max-width: 450px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    box-shadow: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
