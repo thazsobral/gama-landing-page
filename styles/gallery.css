@@ -1,0 +1,32 @@
+.products {
+    width: 320px;
+    height: 180px;
+    overflow: hidden;
+}
+
+.products-items {
+    width: 500%;
+    animation-name: gallery;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.items {
+    list-style: none;
+    width: 19.9%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.items img {
+    width: 25%;
+    height: auto;
+}
+
+.items p {
+    text-align: center;
+}

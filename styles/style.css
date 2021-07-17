@@ -30,14 +30,14 @@ main {
 
 .first-container-section {
     width: 65%;
-    /* height: 100vh; */
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .second-container-section {
-    /* height: 100vh; */
+    height: auto;
     display: flex;
     width: 35%;
     justify-content: center;
@@ -69,7 +69,17 @@ img {
 
 .logos-container {
     height: 50vh;
-    margin: 0;
+    /* margin: 0; */
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos-container img {
+    height: 70%;
+    width: auto;
 }
 
 .subscribe-container {
