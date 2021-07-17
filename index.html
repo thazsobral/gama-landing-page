@@ -6,106 +6,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/galery.css">
     <title>Landing Page</title>
 </head>
 
 <body>
-    <header>
-        <section class="section-container background-first-section" style="display:flex; flex-direction: column;">
-            <img src="./assets/images/black-friday-checked-logo.svg" alt="logo black friday" />
-            <img src="./assets/images/gama-toys.gif" alt="logo gama toys">
-        </section>
-
-        <section>
-            <!-- estilizar o timer -->
-            <p class="timer"></p>
-            <a href="#form"><input type="submit" value="Pedir agora!" /></a>
-        </section>
-
-        <section>
-            <p>Todos os produtos com até 70% off por tempo limitado. Então corre para não perder essa oportunidade.</p>
-        </section>
-    </header>
     <!-- estilizar o fundo do main -->
     <main>
-        <section>
-            <!-- estilizar título -->
-            <h1>Alguns descontos em produtos</h1>
-            <!-- tratar as imagens com porcentagens de descontos -->
-            <!-- resposividade -->
-            <!-- ajustar tamanho das imagens -->
-            <div>
-                <img src="./assets/images/hulk-mug.png" alt="caneca do hulk" />
-                <div>
-                    <!-- estilização de textos -->
-                    <p>Caneca Gama</p>
-                    <p>R$50,00 - 50%</p>
-                    <p>R$25,00</p>
-                </div>
+
+        <!-- FIRST SECTION -->
+        <section class="first-container-section background-first-section" style="display:flex; flex-direction: column;">
+            <!-- LOGO -->
+            <div class="logos-container">
+                <img src="./assets/images/logos/black-friday-checked-logo.svg" alt="logo black friday" />
+                <img src="./assets/images/logos/gama-toys.gif" alt="logo gama toys">
             </div>
-            <div>
-                <img src="./assets/images/hulk-lamp.jpg" alt="iluminária do hulk" />
-                <div>
-                    <p>Luminária Gama</p>
-                    <p>R$80,00 - 30%</p>
-                    <p>R$56,00</p>
-                </div>
+        
+            <!-- BOTÃO QUERO ME INSCREVER -->
+            <!-- apenas para mobile -->
+            <div class="subscribe-container" hidden>
+                <p>Inscreva-se para receber promoções deste e dos próximos eventos da Gama Toys.</p>
+                <a href="#form"><input class="subscribe-input" type="submit" value="Quero me inscrever" /></a>
             </div>
-            <div>
-                <img src="./assets/images/hulk-funko.jpg" alt="funko do hulk" />
-                <div>
-                    <p>Funko Gama</p>
-                    <p>R$130,00 - 30%</p>
-                    <p>R$91,00</p>
-                </div>
+            
+            <!-- TIMER -->
+            <div class="timer-container">
+                <!-- estilizar o timer -->
+                <p>Essa promoção termina em</p>
+                <p class="timer"></p>
+                <p>com todos os produtos com até 70% off. Então corre e se inscreva para não perder essa oportunidade.</p>
             </div>
-            <div>
-                <img src="./assets/images/hulk-picture.jpg" alt="quadro do hulk" />
-                <div>
-                    <p>Quadro Gama</p>
-                    <p>R$52,00 - 50%</p>
-                    <p>R$26,00</p>
-                </div>
-            </div>
-            <div>
-                <img src="./assets/images/hulk-shirt.jpg" alt="camiseta do hulk" />
-                <div>
-                    <p>Camiseta Gama</p>
-                    <p>R$59,00 - 70%</p>
-                    <p>R$17,70</p>
-                </div>
-            </div>
-            <div>
-                <img src="./assets/images/hulk-sticker.jpg" alt="adesivo do hulk" />
-                <div>
-                    <p>Caneca Gama</p>
-                    <p>R$29,00 - 20%</p>
-                    <p>R$23,20</p>
+            
+            <!-- PRODUTOS -->
+            <div class="products-container">
+                <!-- estilizar título -->
+                <h1>Alguns produtos com desconto.</h1>
+                <!-- tratar as imagens com porcentagens de descontos -->
+                <!-- resposividade -->
+                <!-- ajustar tamanho das imagens -->
+                <div class="products">
+                    <ul class="products-items">
+                        <li class="items">
+                            <img src="./assets/images/products/hulk-mug.png" alt="caneca do hulk" />
+                            <div class="informatios-product">
+                                <!-- estilização de textos -->
+                                <p>Caneca Gama</p>
+                                <p>R$50,00 - 50%</p>
+                                <p>R$25,00</p>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <img src="./assets/images/products/hulk-lamp.jpg" alt="iluminária do hulk" />
+                            <div class="informatios-product">
+                                <p>Luminária Gama</p>
+                                <p>R$80,00 - 30%</p>
+                                <p>R$56,00</p>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <img src="./assets/images/products/hulk-funko.jpg" alt="funko do hulk" />
+                            <div class="informatios-product">
+                                <p>Funko Gama</p>
+                                <p>R$130,00 - 30%</p>
+                                <p>R$91,00</p>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <img src="./assets/images/products/hulk-picture.jpg" alt="quadro do hulk" />
+                            <div class="informatios-product">
+                                <p>Quadro Gama</p>
+                                <p>R$52,00 - 50%</p>
+                                <p>R$26,00</p>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <img src="./assets/images/products/hulk-shirt.jpg" alt="camiseta do hulk" />
+                            <div class="informatios-product">
+                                <p>Camiseta Gama</p>
+                                <p>R$59,00 - 70%</p>
+                                <p>R$17,70</p>
+                            </div>
+                        </li>
+                        <li class="items">
+                            <img src="./assets/images/products/hulk-sticker.jpg" alt="adesivo do hulk" />
+                            <div class="informatios-product">
+                                <p>Caneca Gama</p>
+                                <p>R$29,00 - 20%</p>
+                                <p>R$23,20</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section class="section-container background-second-section">
-            <div class="card">
+        <!-- SECTION SECTION -->
+        <section class="second-container-section background-second-section">
+            <!-- FORM -->
+            <div class="form-container">
+                <p>Inscreva-se para receber promoções deste e dos próximos eventos da Gama Toys.</p>
                 <!-- estilizar o formulário o formulário -->
                 <form id="form" action="">
                     <input type="text" id="name" placeholder="Nome" />
                     <input type="text" id="email" placeholder="E-mail" />
-                    <input type="submit" value="Pedir agora!" />
+                    <div class="checkbox-news">
+                        <input type="checkbox" id="subscribe-news">
+                        <label for="subscribe-news">Quero receber novidades da Gama Toys.</label>
+                    </div>
+                    <input class="subscribe-input" type="submit" value="Inscrever" />
                     <!-- ajustar imagem dentro input -->
-                    <img src="./assets/images/little-hulk.png" alt="imagem do hulk pequeno">
-                    <section>
-                        <!-- estilizar o timer -->
-                        <p class="timer"></p>
-                    </section>
                 </form>
+                
+                <!-- TIMER -->
+                <div class="timer-container" hidden>
+                    <!-- estilizar o timer -->
+                    <p>Essa promoção termina em</p>
+                    <p class="timer"></p>
+                    <p>com todos os produtos com até 70% off.</p>
+                    <p>Então corre e se inscreva para não perder essa oportunidade.</p>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>
             © 2021 Thaz Commerce. Todos os direitos reservados.
+            <img src="./assets/images/logos/little-hulk.png" alt="imagem do hulk pequeno">
         </p>
     </footer>
 </body>

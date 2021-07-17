@@ -11,12 +11,12 @@ var count = setInterval(() => {
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    document.getElementsByClassName("timer")[0].innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    document.getElementsByClassName("timer")[1].innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    document.getElementsByClassName("timer")[0].innerHTML = `<span>${days}</span> dias <span>${hours}</span> horas <span>${minutes}</span> minutos <span>${seconds}</span> segundos`;
+    document.getElementsByClassName("timer")[1].innerHTML = `<span>${days}</span> dias <span>${hours}</span> horas <span>${minutes}</span> minutos <span>${seconds}</span> segundos`;
 
     if(distance < 0) {
         clearInterval(count);
-        document.getElementsByClassName("timer")[0].innerHTML = "EXPIRED";
-        document.getElementsByClassName("timer")[1].innerHTML = "EXPIRED";
+        document.getElementsByClassName("timer")[0].innerHTML = "<span>EXPIRED</span>";
+        document.getElementsByClassName("timer")[1].innerHTML = "<span>EXPIRED</span>";
     }
 }, interval);
