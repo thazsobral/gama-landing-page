@@ -20,7 +20,8 @@ html {
 body {
     display: flex;
     flex-flow: column;
-    font-size: large;
+    font-size: normal;
+    font-family: sans-serif;
 }
 
 main {
@@ -47,7 +48,7 @@ p {
     margin: 2px 0;
 }
 
-p 
+p
     strong {
         color: var(--color-main-purple);
     }
@@ -55,6 +56,22 @@ p
 h1 {
     color: var(--color-main-green);
     text-align: center;
+}
+
+a {
+    display: block;
+    width: 40%;
+    height: auto;
+    padding: 5px;
+    background: var(--color-main-purple);
+    color: var(--color-main-white);
+    text-decoration: none;
+    border-radius: .25rem;
+}
+
+a:hover {
+    transition: .5s;
+    background: var(--color-light-green);
 }
 
 .first-container-section {
@@ -73,7 +90,7 @@ h1 {
     margin: 10px 0;
 }
 
-.timer 
+.timer
     span {
         padding: 5px;
         background: var(--color-main-black);
@@ -98,6 +115,16 @@ h1 {
 
 .subscribe-input {
     background: var(--color-main-green);
+    width: 60%;
+    border: none;
+    padding: 5px;
+    color: var(--color-main-white);
+    font-size: large;
+}
+
+.subscribe-input:hover {
+    transition: .5s;
+    background: var(--color-main-purple);
 }
 
 .timer-container {
@@ -138,27 +165,28 @@ h1 {
 
 .subscribe-container {
     display: none;
-    text-align: center;
 }
 
 #form {
     display: flex;
     flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#form 
+#form
     .checkbox-news {
         margin: 10px 0;
     }
 
 #form
-    #name, #email, .subscribe-input {
+    #name, #email {
         width: 100%;
         height: 30px;
         padding: 2%;
         margin-bottom: 10px;
         border-radius: 12px;
-        border: 1px solid gray;
+        border: 1px solid var(--color-light-green);
         box-shadow: none;
     }
 
@@ -189,7 +217,11 @@ h1 {
         }
 
     .subscribe-container {
-        display: block;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .hidden-timer {
