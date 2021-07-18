@@ -9,7 +9,8 @@ form.addEventListener("submit", (event) => {
     localStorage.setItem("dataUser", JSON.stringify({ "name": name, "email": email, "subscribe-news": news }));
 
     setTimeout(() => {
-        form.innerHTML = "<p>Prontinho!<br />Agora é verificar nosso e-mail de confirmação na sua caixa de entrada.</p>";
+        let formContainer = document.querySelector(".form-container");
+        formContainer.innerHTML = "<p>Prontinho!<br />Agora é verificar nosso e-mail de confirmação na sua caixa de entrada.</p>";
     }, 1500);
 
 });

@@ -20,6 +20,7 @@ html {
 body {
     display: flex;
     flex-flow: column;
+    font-size: large;
 }
 
 main {
@@ -42,18 +43,24 @@ img {
     width: auto;
 }
 
+p {
+    margin: 2px 0;
+}
+
+p 
+    strong {
+        color: var(--color-main-purple);
+    }
+
+h1 {
+    color: var(--color-main-green);
+    text-align: center;
+}
+
 .first-container-section {
     width: 65%;
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.second-container-section {
-    height: auto;
-    display: flex;
-    width: 35%;
     justify-content: center;
     align-items: center;
 }
@@ -98,9 +105,22 @@ img {
     text-align: center;
 }
 
+.hidden-timer {
+    display: none;
+    width: 100%;
+}
+
 .products-container {
     display: flex;
     flex-flow: column;
+}
+
+.second-container-section {
+    height: auto;
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-second-section{
@@ -113,6 +133,11 @@ img {
     padding: 25px;
     max-width: 450px;
     width: 80%;
+    text-align: center;
+}
+
+.subscribe-container {
+    display: none;
     text-align: center;
 }
 
@@ -162,4 +187,18 @@ img {
         img {
             width: 80%;
         }
+
+    .subscribe-container {
+        display: block;
+    }
+
+    .hidden-timer {
+        display: block;
+    }
+
+    .hidden-timer
+        .timer {
+            font-size: small;
+        }
+
 }
