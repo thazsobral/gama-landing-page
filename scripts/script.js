@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) => {
 
         setTimeout(() => {
             let formContainer = document.querySelector(".form-container");
-            formContainer.innerHTML = "<p>Prontinho!<br />Agora é verificar nosso e-mail de confirmação na sua caixa de entrada.</p>";
+            formContainer.innerHTML = "<p>Prontinho!<br />Agora é só verificar nosso e-mail de confirmação na sua caixa de entrada.</p>";
         }, 1500);
     }
 
