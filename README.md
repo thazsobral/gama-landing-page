@@ -7,7 +7,7 @@ Criar um sistema de e-commerce para cadastro de email na landing page para receb
 # Resultado
 
 ## Versão desktop
-![versão desktop](./assets/screenshots/desktop-record.gif){ width=50% }
+![versão desktop](./assets/screenshots/desktop-record.gif)
 
 ## Versão mobile
 ![versão desktop](./assets/screenshots/mobile-record.gif)
