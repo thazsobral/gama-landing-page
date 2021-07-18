@@ -30,7 +30,6 @@ main {
 
 footer {
     height: 8vh;
-    /* padding-top: 5px; */
     display: flex;
     justify-content: center;
     text-align: center;
@@ -61,8 +60,6 @@ img {
 
 .background-first-section {
     background: var(--color-main-white);
-    /* background-attachment: fixed; */
-    /* background-size: contain; */
 }
 
 .timer {
@@ -91,10 +88,6 @@ img {
         height: auto;
         width: 40%;
     }
-
-.subscribe-container {
-    /* margin: 0; */
-}
 
 .subscribe-input {
     background: var(--color-main-green);
@@ -153,32 +146,20 @@ img {
 
     .first-container-section {
         width: 100vw;
-        /* height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center; */
     }
 
     .second-container-section {
         height: 80vh;
-        /* display: flex; */
         width: 100vw;
-        /* justify-content: center;
-        align-items: center; */
     }
 
     .logos-container {
-        /* height: 100vh; */
-        /* width: 100%; */
         display: flex;
         flex-flow: column;
-        /* justify-content: center;
-        align-items: center; */
     }
 
     .logos-container
         img {
-            /* height: auto; */
             width: 80%;
         }
 }
