@@ -1,4 +1,4 @@
-var expectedDate = new Date("Nov 26, 2021 23:59").getTime();
+var expectedDate = new Date("Nov 26, 2022 23:59").getTime();
 const interval = 1000;
 
 var count = setInterval(() => {
